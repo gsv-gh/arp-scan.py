@@ -1,15 +1,6 @@
 #!/usr/bin/env python3
 
 
-'''
-TODO:
-DONE:
-	- Automatically get network information from interface configuration. -- DONE
-	- Check UID --DONE
-	- Add help --DONE
-'''
-
-
 from re import search
 from sys import argv
 from netaddr import IPNetwork
