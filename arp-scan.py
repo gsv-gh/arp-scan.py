@@ -1,6 +1,15 @@
 #!/usr/bin/env python3
 
 
+'''
+TODO:
+DONE:
+	- Automatically get network information from interface configuration. -- DONE
+	- Check UID --DONE
+	- Add help --DONE
+'''
+
+
 from re import search
 from sys import argv
 from netaddr import IPNetwork
@@ -10,8 +19,10 @@ from subprocess import run
 
 def print_help():
 	print("Local area network host discovery tool\n")
-	print("Usage: ./arp-scan.py [Network/CIDR]")
-	print("Example: ./arp-scan.py 192.168.1.0/24")
+	print("Usage: ./arp-scan.py [Network/CIDR]\n")
+	print("Examples:")
+	print("\t./arp-scan.py")
+	print("\t./arp-scan.py 192.168.1.0/24")
 
 
 def check_uid():
